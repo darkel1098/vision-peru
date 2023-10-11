@@ -1,0 +1,14 @@
+---
+import TabItem from './tabbar-item.astro'
+---
+
+<div>
+
+	<div class="block px-3 py-4">
+	  <nav class="isolate flex divide-x divide-gray-200 dark:divide-zinc-700 rounded-lg shadow overflow-hidden" aria-label="Tabs">
+		  <TabItem url="/" title="Canales" current={true}/>
+		  <TabItem url="/deportes" title="Deportes" current={false}/>
+		  <TabItem url="/clasificatoria" title="Clasificatoria" current={false}/>
+	  </nav>
+	</div>
+  </div>
