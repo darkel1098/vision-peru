@@ -9,5 +9,5 @@ export default defineConfig({
   adapter: vercel(),
   output: 'hybrid',
   site: "https://apps.lasolucionica.com",
-  base: "visionperu"
+  //base: "visionperu"
 });
