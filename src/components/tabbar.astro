@@ -1,14 +1,22 @@
 ---
-import TabItem from './tabbar-item.astro'
+import logo from '../images/logo.png'
 ---
-
-<div>
+<div class="bg-red-700">
 
 	<div class="block px-3 py-4">
-	  <nav class="isolate flex divide-x divide-gray-200 dark:divide-zinc-700 rounded-lg shadow overflow-hidden" aria-label="Tabs">
-		  <TabItem url="/" title="Canales" current={true}/>
-		  <TabItem url="/deportes" title="Deportes" current={false}/>
-		  <TabItem url="/clasificatoria" title="Clasificatoria" current={false}/>
+	  <nav 
+	  class="isolate flex rounded-lg overflow-hidden" 
+	  aria-label="Tabs"
+	  >
+		  <div class="h-[40px] flex justify-center items-center gap-5 w-full">
+			<div >
+				<img class="h-[40px] w-[40px]" src={logo.src} alt="">
+			</div>
+			<div>
+				<span class="text-gray-50 text-2xl my-auto py-auto text-center font-bold">Directus</span>
+				<span class="text-gray-50 text-2xl my-auto py-auto text-center ">TV</span>
+			</div>
+		  </div>
 	  </nav>
 	</div>
   </div>
