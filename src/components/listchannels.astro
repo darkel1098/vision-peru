@@ -5,7 +5,7 @@ import Failure from "./serverbad.astro";
 let jsonData;
 
 try {
-    const response = await fetch("https://api-apps-ta5b-dev.fl0.io/items/Channels");
+    const response = await fetch("https://directus-api-apps-deht.1.us-1.fl0.io/items/Channels");
 
     if (response.status !== 200) {
       throw new Error("Error en la solicitud");
